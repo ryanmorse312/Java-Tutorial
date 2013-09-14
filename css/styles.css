@@ -1,0 +1,34 @@
+.title {
+    text-align: center;
+    width: 600px;
+    font-size: 72px;
+}
+.intro {
+    text-align: center;
+}
+.intro h1 {
+    font-size: 72px;
+}
+.default {
+    min-width: 400px;
+}
+.default p {
+    font-size: 48px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#unary-operators {
+    width: 600px;
+}
+#if-else p{
+    min-width: 400px;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#switch p{
+    min-width: 400px;
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

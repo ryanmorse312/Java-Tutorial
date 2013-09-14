@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>Java Tutorial</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div id="impress" data-x="0" data-y="0">
+    <div id="title" class="title step">
+        <h1>Beginning Java</h1>
+        <p>A tutorial for the absolute beginner.</p>
+    </div>
+    <div id="part1" class="intro step" data-x="1200" data-y="300" data-rotate="90">
+        <h1>Data Types</h1>
+    </div>
+    <div id="byte" class="step default" data-x="-1200" data-y="600" data-rotate-x="-180">
+        <h1 style="font-size:72px; margin-bottom:15px;">Byte</h1>
+        <p><strong>declaration:</strong> byte x;</p>
+        <p><strong>size:</strong> 1 byte</p>
+        <p><strong>range:</strong> -128 to 127 (inclusive)</p>
+        <p><strong>notes:</strong> does not support decimals</p>
+    </div>
+    <div id="short" class="default step" data-x="-1200" data-y="711" data-z="-40" data-rotate-x="-180" data-scale="0.0005">
+        <h1 style="font-size:72px; margin-bottom:15px;">Short</h1>
+        <p><strong>declaration:</strong> short x;</p>
+        <p><strong>size:</strong> 2 bytes</p>
+        <p><strong>range:</strong> -32,768 to 32,767 (inclusive)</p>
+        <p><strong>notes:</strong> does not support decimals</p>
+    </div>
+    <div id="int" class="default step" data-x="-1800" data-y="400">
+        <h1 style="font-size:72px; margin-bottom:15px;">Integer</h1>
+        <p><strong>declaration:</strong> int x;</p>
+        <p><strong>size:</strong> 4 bytes</p>
+        <p><strong>range:</strong> -2,147,483,648 to 2,147,483,647 (inclusive)</p>
+        <p><strong>notes:</strong> does not support decimals</p>
+    </div>
+    <div id="long" class="default step" data-x="-2100" data-y="1300" data-rotate-y="180">
+        <h1 style="font-size:72px; margin-bottom:15px;">Long</h1>
+        <p><strong>declaration:</strong> long x;</p>
+        <p><strong>size:</strong> 8 bytes</p>
+        <p><strong>range:</strong> -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (inclusive)</p>
+        <p><strong>notes:</strong> does not support decimals</p>
+    </div>
+    <div id="float" class="default step" data-x="0" data-y="0" data-z="500" data-rotate-y="180" data-scale="0.001">
+        <h1 style="font-size:72px; margin-bottom:15px;">Floating Point</h1>
+        <p><strong>declaration:</strong> float x;</p>
+        <p><strong>size:</strong> 4 bytes</p>
+        <p><strong>range:</strong> less than double</p>
+        <p><strong>notes:</strong> enforces decimals</p>
+    </div>
+    <div id="double" class="default step" data-x="600" data-y="2000">
+        <h1 style="font-size:72px; margin-bottom:15px;">Double</h1>
+        <p><strong>declaration:</strong> double x;</p>
+        <p><strong>size:</strong> 8 bytes</p>
+        <p><strong>range:</strong> more than floating point</p>
+        <p><strong>notes:</strong> enforces decimals</p>
+    </div>
+    <div id="boolean" class="default step" data-x="1480" data-y="-900">
+        <h1 style="font-size:72px; margin-bottom:15px;">Boolean</h1>
+        <p><strong>declaration:</strong> boolean x;</p>
+        <p><strong>size:</strong> undefined</p>
+        <p><strong>range:</strong> true/false</p>
+        <p><strong>notes:</strong> no numeric value; can only be defined as true or false</p>
+    </div>
+    <div id="char" class="default step" data-y="1300" data-rotate="145">
+        <h1 style="font-size:72px; margin-bottom:15px;">Character</h1>
+        <p><strong>declaration:</strong> char x;</p>
+        <p><strong>size:</strong> 2 bytes</p>
+        <p><strong>range:</strong> all Unicode charactars</p>
+        <p><strong>notes:</strong> can be assigned a numeric value, but that value cannot be used</p>
+    </div>
+    <div id="string" class="default step" data-y="-1300">
+        <h1 style="font-size:72px; margin-bottom:15px;">String</h1>
+        <p><strong>declaration:</strong> String x;</p>
+        <p><strong>size:</strong> undefined</p>
+        <p><strong>range:</strong> undefined</p>
+        <p><strong>notes:</strong> can be any arrangement of Unicode charactars; not really a data type, but a class; more on that later</p>
+    </div>
+    <div id="part2" class="intro step" data-x="3000" data-rotate="270">
+        <h1>Arrays</h1>
+    </div>
+    <div id="declaring-array" class="default step" data-x="2000" data-rotate="180">
+        <h1 style="font-size:72px; margin-bottom:15px;">Declaring an Array</h1>
+        <p>An array is declared by following the data type of the variables it holds by []</p>
+        <p><strong>ex:</strong> int[] x;</p>
+    </div>
+    <div id="adding-to-array" class="default step" data-x="1600" data-y="3200" data-rotate="90" data-rotate-x="180">
+        <h1 style="font-size:72px; margin-bottom:15px;">Adding Values to an Array</h1>
+        <p>Values are added by an array by calling an array with the number of the variable in the array inside the []s</p>
+        <p><strong>ex:</strong> x[1] = 32;</p>
+    </div>
+    <div id="referring-to-value-in-array" class="default step" data-x="3900" data-rotate-y="180">
+        <h1 style="font-size:72px; margin-bottom:15px;">Accessing Variables in an Array</h1>
+        <p>You can access a variable in an array by calling the array and placing the number of the variable in the array inside the []s</p>
+        <p><strong>ex:</strong> x[1]</p>
+    </div>
+    <div id="part3" class="intro step" data-x="7200">
+        <h1>Operators</h1>
+    </div>
+    <div id="arithmetic-operators" class="default step" data-y="7200">
+        <h1 style="font-size:72px; margin-bottom:15px;">Arithmetic Operators</h1>
+        <p><strong>Addition:</strong> a + b</p>
+        <p><strong>Subtraction:</strong> a - b</p>
+        <p><strong>Multiplication:</strong> a * b</p>
+        <p><strong>Division:</strong> a / b</p>
+        <p><strong>Remainder:</strong> a % b</p>
+    </div>
+    <div id="assignment-operator" class="default step" data-x="800" data-y="7500">
+        <h1 style="font-size:72px; margin-bottom:15px;">The Assignment Operator</h1>
+        <p>To assign a variable a value, use an '=' sign.</p>
+        <p><strong>ex:</strong> a = b</p>
+    </div>
+    <div id="unary-operators" class="default step" data-x="-800" data-y="6900" data-rotate="45">
+        <h1 style="font-size:72px; margin-bottom:15px;">Unary Operators</h1>
+        <p>Unary operators require only one operand</p>
+        <p><strong>Indicate positive value:</strong> +x</p>
+        <p><strong>Negate expression</strong> -x</p>
+        <p><strong>Increment value by one:</strong> x++</p>
+        <p><strong>Decrement value by one:</strong> x--</p>
+        <p><strong>Invert value of a boolean:</strong> !x</p>
+    </div>
+    <div id="relational-operators" class="default step" data-x="-1600" data-y="8000" data-rotate-y="180">
+        <h1 style="font-size:72px; margin-bottom:15px;">Relational Operators</h1>
+        <p><strong>Equal to:</strong> ==</p>
+        <p><strong>Not equal to:</strong> !=</p>
+        <p><strong>Greater than:</strong> &gt;</p>
+        <p><strong>Greater than or equal to:</strong> &gt;=</p>
+        <p><strong>Less than:</strong> &lt;</p>
+        <p><strong>Less than or equal to:</strong> &lt;=</p>
+    </div>
+    <div id="conditional-operators" class="default step" data-x="-2200" data-y="7000" data-rotate-x="180">
+        <h1 style="font-size:72px; margin-bottom:15px;">Conditional Operators</h1>
+        <p><strong>And:</strong> &amp;&amp;</p>
+        <p><strong>Or:</strong> ||</p>
+    </div>
+    <div id="part4" class="intro step" data-x="9200">
+        <h1>Control Flow Statements</h1>
+    </div>
+    <div id="if" class="default step" data-x="7200" data-y="1200">
+        <h1 style="font-size:72px; margin-bottom:15px;">If-Then Statements</h1>
+        <p>Executes a block of code based on whether or not an expression is true</p>
+        <p><strong>ex:</strong></p>
+        <p>if(a==b) {</p>
+        <p style="text-indent:2em;">a++;</p>
+        <p>}</p>
+    </div>
+    <div id="if-else" class="step" data-x="7900" data-y="1200" data-rotate="180">
+        <h1 style="font-size:72px; margin-bottom:15px;">If-Then-Else Statements</h1>
+        <p>Works like an if-else statement, but executes another block of code if the expression is false</p>
+        <p><strong>ex:</strong></p>
+        <p>if(a==b) {</p>
+        <p style="text-indent:2em;">a++;</p>
+        <p>} else {</p>
+        <p style="text-indent:2em;">a--;</p>
+        <p>}</p>
+    </div>
+    <div id="switch" class="step" data-x="8600" data-y="1200">
+        <h1 style="font-size:72px; margin-bottom:15px;">Switch Statements</h1>
+        <p>Executes a block of code based on the value of a variable.</p>
+        <p><strong>ex:</strong></p>
+        <p>switch(x) {</p>
+        <p style="text-indent:2em;">case 1: x++;</p>
+        <p style="text-indent:4em;">break;</p>
+        <p style="text-indent:2em;">case 2: x--;</p>
+        <p style="text-indent:4em;">break;</p>
+        <p>}</p>
+    </div>
+    <div id="while" class="default step" data-x="7200" data-y="2000" data-rotate-y="90">
+        <h1 style="font-size:72px; margin-bottom:15px;">While Statements</h1>
+        <p>Loops a block of code based on whether a statement is true.</p>
+        <p><strong>ex:</strong></p>
+        <p>while(a&lt;b) {</p>
+        <p style="text-indent:2em;">a++;</p>
+        <p>}</p>
+    </div>
+    <div id="do-while" class="default step" data-x="7900" data-y="2000" data-rotate-y="180">
+        <h1 style="font-size:72px; margin-bottom:15px;">Do-While Statements</h1>
+        <p>Does the same thing as a while statement, but always executes at least once.</p>
+        <p><strong>ex:</strong></p>
+        <p>do {</p>
+        <p style="text-indent:2em;">a++</p>
+        <p>} while(a&lt;b)</p>
+    </div>
+    <div style="width:700px;" id="for" class="default step" data-x="8600" data-y="2000" data-rotate-y="270">
+        <h1 style="font-size:72px; margin-bottom:15px;">For Statements</h1>
+        <p>Does the same thing as a while statement, but modifies the value of variables before execution.</p>
+        <p><strong>ex:</strong></p>
+        <p>for(int a = 2, b = 10; a &lt; b; a++) {</p>
+        <p style="text-indent: 2em;">System.out.println(a + " &lt; " + b);</p>
+        <p>}</p>
+    </div>
+    <div id="break" class="default step" data-x="9300" data-y="2000" data-rotate="90">
+        <h1 style="font-size:72px; margin-bottom:15px;">Break Statements</h1>
+        <p>Breaks out of a loop</p>
+        <p><strong>ex:</strong> break;</p>
+    </div>
+    <div id="continue" class="default step" data-x="9300" data-y="1200" data-rotate="135">
+        <h1 style="font-size:72px; margin-bottom:15px;">Continue</h1>
+        <p>Returns to the top of a loop.</p>
+        <p><strong>ex:</strong> continue;</p>
+    </div>
+    <div id="part5" class="intro step" data-x="-9300" data-y="-1200">
+        <h1>Syntax</h1>
+    </div>
+    <div id="end-line" class="default step" data-x="-10000" data-y="-2000">
+        <h1 style="font-size:72px; margin-bottom:15px;">Ending a Line of Code</h1>
+        <p>To end a line of code, place a semicolon after it</p>
+        <p><strong>ex:</strong> x = 10;</p>
+    </div>
+    <div id="execute-method" class="default step" data-x="-10000" data-y="-2800" data-rotate-x="90">
+        <h1 style="font-size:72px; margin-bottom:15px;">Executing a Method</h1>
+        <p>To execute a method, call the class, then the method, then the parameters. The parameters may be left blank.</p>
+        <p><strong>ex:</strong> Class.method(parameters);</p>
+    </div>
+    <div style="width:900px;" id="base" class="default step" data-x="-10000" data-y="-1200" data-rotate-x="180">
+        <h1 style="font-size:72px; margin-bottom:15px;">What Your Code Should Look Like</h1>
+        <p>public class ClassName {</p>
+        <p style="text-indent:2em;">public static void main(String[] args) {</p>
+        <p style="text-indent:2em;">}</p>
+        <p>}</p>
+    </div>
+    <div id="congrats" class="title step" data-y="8000" data-x="8000">
+        <h1>Congrats!</h1>
+        <p>You have completed the Beginning Java tutorial!</p>
+    </div>
+</div>
+
+<script type=text/javascript src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
