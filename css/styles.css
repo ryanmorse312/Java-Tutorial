@@ -19,18 +19,6 @@
     margin-bottom: 5px;
     margin-top: 5px;
 }
-#unary-operators {
-    width: 600px;
-}
-#if-else p{
-    min-width: 400px;
-    font-size: 40px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-#switch p{
-    min-width: 400px;
-    font-size: 40px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+#11 p, #14 p, #20 p, #29 p, #33 p, #34 p, #35 p, #36 p {
+    font-size: 20pt;
 }
