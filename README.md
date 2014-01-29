@@ -1,4 +1,4 @@
-Java-Tutorial
+The Dark is Rising
 =============
 
-Contains tutorials for Java coded in HTML and CSS and utilizing impress.js. So far, A beginning Java tutorial is included.
+Contains a presentation for school about Susan Cooper's "The Dark is Rising"
